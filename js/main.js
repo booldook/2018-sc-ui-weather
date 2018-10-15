@@ -46,6 +46,7 @@ $.ajax({
 			html = '<option value="'+city[i].id+'">'+city[i].name+'</option>';
 			$("#area").append(html);
 		}
+		$("#area").trigger("change");
 	},
 	error:function(xhr, status, error) {
 		console.log(xhr, status, error);

@@ -7,8 +7,19 @@
 .daily > div {display:table-cell; text-align:center; vertical-align:middle;}
 .weekly {overflow: auto;}
 .weekly > li {padding:3%; border-bottom:1px solid #ccc; text-align:left;}
-.weekly .wk_icon {float:left; width:20%;}
 .weekly ul {float:left; width:80%; padding-left:10%;}
+
+.dl_icon {width:80%; max-width:250px;}
+.dl_area {font-size:2em; color:rgb(0, 78, 196); font-weight:bold; margin-top:2em;}
+.dl_date {font-size:1.5em; color:rgb(66, 66, 66);}
+.dl_temp {font-size:2em; color:rgb(8, 52, 102);}
+.dl_desc {font-size:1.5em; color:rgb(177, 177, 177)}
+
+.wk_icon {float:left; width:20%;}
+.wk_area {font-size:1.25em; color:rgb(0, 78, 196); font-weight:bold; }
+.wk_date {font-size:1.25em; color:rgb(66, 66, 66); }
+.wk_temp {font-size:1.5em; color:rgb(8, 52, 102);}
+.wk_desc {font-size:1.25em; color:rgb(177, 177, 177);}
 
 .tab_active {background-color:rgb(3, 112, 185); color:#fff;}
 .tab_disable {background-color:rgb(202, 216, 226); color:#666;}

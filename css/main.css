@@ -1,2 +1,11 @@
-.wrap {width:100%; height:100%; max-width:800px; margin:0 auto;}
-.wrap > ul {width:50%; height:100%; float:left; padding:5%; text-align:center;}
+.wrap {width:100%; height:100%; max-width:800px; margin:0 auto; border:4px solid #e1e1e1;}
+.tabs {width:100%; height:60px;}
+.tabs > li {float:left; line-height:60px; text-align:center; width:50%; font-size:2rem; font-weight:bold; color:#666; border-bottom:1px solid #999; border-right:1px solid #999;}
+.tabs > :last-child {border-right:none;}
+.wrap > .daily, .wrap > .weekly {width:50%; height:calc(100% - 60px); float:left; padding:5%; text-align:center;}
+.daily {display:table; border-right:1px solid #ccc;}
+.daily > div {display:table-cell; text-align:center; vertical-align:middle;}
+.weekly {overflow: auto;}
+.weekly > li {padding:3%; border-bottom:1px solid #ccc; text-align:left;}
+.weekly .wk_icon {float:left; width:20%;}
+.weekly ul {float:left; width:80%; padding-left:10%;}

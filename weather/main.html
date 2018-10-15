@@ -20,114 +20,32 @@
 		<div class="daily">
 			<div>
 				<img src="../img/sunny.png" class="img dl_icon">
-				<div class="dl_area">서울</div>
+				<div class="dl_area">
+					<span>서울</span> 
+					<button id="modal_open" class="w3-button w3-blue w3-small">도시선택</button>
+				</div>
 				<div class="dl_date">2018년 10월 15일</div>
 				<div class="dl_temp">15℃ (최고:18℃ / 최저:13℃)</div>
 				<div class="dl_desc">sunny day</div>
 			</div>
 		</div>
-		<ul class="weekly">
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-			<li class="clear">
-				<img src="../img/sunny.png" class="img wk_icon">
-				<ul>
-					<li class="wk_area">서울</li>
-					<li class="wk_date">2018년 10월 15일 18:00</li>
-					<li class="wk_temp">15℃</li>
-					<li class="wk_desc">sunny day</li>
-				</ul>
-			</li>
-		</ul>
+		<ul class="weekly"></ul>
 	</div>
+
+	<div id="modal" class="w3-modal">
+		<div class="w3-modal-content">
+			<header class="w3-container w3-transparent"> 
+				<span id="modal_close" class="w3-button w3-display-topright">&times;</span>
+				<h2>도시선택</h2>
+			</header>
+			<div class="w3-container" style="padding:2rem;">
+				<div class="selects w3-border">
+					<select id="area" class="w3-input"></select>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="../js/main.js"></script>
 </body>
 
